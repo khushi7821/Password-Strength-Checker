@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Strength Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Password Strength Checker</h1>
+    <label for="password">Enter your password:</label>
+    <input id="password" type="password" placeholder="••••••••" />
+    <div class="meter">
+      <div id="meter-bar"></div>
+    </div>
+    <p id="strength-text">Weak</p>
+    <p id="message">Your password is too weak. Try adding more characters or using a stronger password.</p>
+    <div class="actions">
+      <button id="generate">Generate Password</button>
+      <button id="copy" disabled>Copy</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

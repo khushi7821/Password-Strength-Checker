@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e293b; /* dark navy */
+  color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.6);
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.meter {
+  height: 10px;
+  width: 100%;
+  background: #334155;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+#meter-bar {
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+#strength-text {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+#message {
+  font-size: 14px;
+  margin: 10px 0 20px;
+  color: #cbd5e1;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#generate {
+  background: #3b82f6;
+  color: white;
+}
+
+#copy {
+  background: #475569;
+  color: white;
+}
+
+#copy:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
